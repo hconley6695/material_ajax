@@ -5,9 +5,9 @@ export default class Main extends Component {
 	render() {
 		return (
 			<div className="background">
-				<Paper/>
-					{this.props.chidren}
-
+				<Paper className="paper">
+					{this.props.children}
+				</Paper>
 			</div>
 		)
 	}

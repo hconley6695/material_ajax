@@ -2,45 +2,42 @@ import React, {Component} from 'react';
 import { hashHistory, Link } from 'react-router';
 import List from 'material-ui/lib/lists/list';
 import ListItem from 'material-ui/lib/lists/list-item';
+// import Person from 'material-ui';
+//import CommunicationChatBubble from 'material-ui/lib/communication-chat-bubble';
 
 export default class GithubUsers extends Component {
 	render () {
 		return (
 
 			<div className="users_list">
-				<List subheader="Recent chats">
+			  <ul>
+				<List subheader="Github Users">
 
-      				<ListItem
+      				<Link to="/jisaacks/orgs" className="style-user-list"><ListItem
 				        primaryText="jisaacks"
-				        leftAvatar={<Avatar src="images/ok-128.jpg" />}
-				        rightIcon={<CommunicationChatBubble />}
-     				/>
 
-			      <ListItem
+				        // rightIcon={<CommunicationChatBubble />}
+     				/></Link>
+
+			      <Link to="/sindresorhus/orgs" className="style-user-list"><ListItem
 				        primaryText="sindresorhus"
-				        leftAvatar={<Avatar src="images/kolage-128.jpg" />}
-				        rightIcon={<CommunicationChatBubble />}
-			      />
+				        // rightIcon={<CommunicationChatBubble />}
+			      /></Link>
 
-			      <ListItem
+			      <Link to="/addyosmani/orgs" className="style-user-list"><ListItem
 				        primaryText="addyosmani"
-				        leftAvatar={<Avatar src="images/kolage-128.jpg" />}
-				        rightIcon={<CommunicationChatBubble />}
-			      />
+			      /></Link>
 
-			      <ListItem
+			      <Link to="/wycats/orgs" className="style-user-list"><ListItem
 				        primaryText="wycats"
-				        leftAvatar={<Avatar src="images/kolage-128.jpg" />}
-				        rightIcon={<CommunicationChatBubble />}
-			      />
+			      /></Link>
 
-			      <ListItem
+			      <Link to="/dhh/orgs" className="style-user-list"><ListItem
 				        primaryText="dhh"
-				        leftAvatar={<Avatar src="images/kolage-128.jpg" />}
-				        rightIcon={<CommunicationChatBubble />}
-			      />
+			      /></Link>
 
 			     </List>
+			  </ul>   
 			</div>
 		)
 	}

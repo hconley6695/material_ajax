@@ -14,4 +14,15 @@ render ((
 			<Route path=":user/orgs" component={UserOrgs}/>
 		</Route>
 	</Router>
-	))
+	), document.querySelector('.app'));
+
+
+
+
+
+
+
+
+// React.render (
+// 	<GithubUsers/>
+// 	, document.querySelector('.app'));
